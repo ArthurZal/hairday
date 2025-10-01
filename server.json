@@ -1,3 +1,28 @@
 {
-    "schedules": []
+  "schedules": [
+    {
+      "id": 1759256814093,
+      "when": "2025-09-30T20:00:00.000Z"
+    },
+    {
+      "id": 1759256861409,
+      "clientName": "Arthur Oliveira",
+      "when": "2025-10-01T00:00:00.000Z"
+    },
+    {
+      "id": 1759256917323,
+      "clientName": "Arthur Oliveira",
+      "when": "2025-10-03T18:00:00.000Z"
+    },
+    {
+      "id": 1759256950512,
+      "clientName": "Arthur Oliveira",
+      "when": "2025-09-30T20:00:00.000Z"
+    },
+    {
+      "id": 1759256971972,
+      "clientName": "Arthur Oliveira",
+      "when": "2025-09-30T23:00:00.000Z"
+    }
+  ]
 }
