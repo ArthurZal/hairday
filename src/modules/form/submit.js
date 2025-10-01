@@ -1,4 +1,5 @@
 import dayjs from "dayjs";
+import { scheduloNew } from "../../service/schedule-new.js";
 
 const form = document.querySelector("form");
 const inputDate = document.getElementById("date");
@@ -9,7 +10,7 @@ const inputToday = dayjs(new Date()).format("YYYY-MM-DD");
 inputDate.value = inputToday;
 inputDate.min = inputToday;
 
-form.onsubmit = (event) => {
+form.onsubmit = async (event) => {
     event.preventDefault();
 
     try {
@@ -32,7 +33,7 @@ form.onsubmit = (event) => {
         
         const id = new Date().getTime();
 
-        console.log({
+        await scheduloNew({
             id,
             clientName,
             when
