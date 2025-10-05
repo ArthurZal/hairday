@@ -1,14 +1,13 @@
-import dayjs from "dayjs";
+import dayjs from "dayjs"
 import { hours } from "../../utils/opening-hours.js"
-import { hoursClick } from "./hours-click.js";
+import { hoursClick } from "./hours-click.js"
 
-const ul = document.getElementById("hours")
+const ul = document.getElementById("hours");
 
 export function hoursLoad({ date, dailySchedules }) {
     ul.innerHTML = "";
 
-    const unavailableHours = dailySchedules.map((schedule) => dayjs(schedule.when).format("HH:mm"))
-    console.log(unavailableHours)
+    const unavailableHours = dailySchedules.map((schedule) => dayjs(schedule.when).format("HH:mm"));
 
     const opening = hours.map((hour) => {
         const [scheduleHour] = hour.split(":");
